@@ -1,11 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import Container from '../components/Container'
 
 const AddNewTask = () => {
     return (
-        <View>
+        <Container>
             <Text>AddNewTask</Text>
-        </View>
+        </Container>
     )
 }
 

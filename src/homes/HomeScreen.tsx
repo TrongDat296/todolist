@@ -17,7 +17,7 @@ import AvataGroup from '../components/AvataGroup'
 import ProgressBarComponent from '../components/ProgressBarComponent'
 import { fontFamilies } from '../constants/fontFamilies'
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }: any) => {
   return (
     <View style={{ flex: 1 }}>
       <Container>
@@ -140,6 +140,7 @@ const HomeScreen = () => {
         alignItems: 'center'
       }}>
         <TouchableOpacity
+          onPress={() => navigation.navigate('AddNewTask')}
           activeOpacity={1}
           style={[globalStyle.row,
           {

@@ -6,7 +6,6 @@ export const globalStyle = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: colors.bgColor,
-
     },
     row: {
         flexDirection: 'row',
