@@ -20,7 +20,7 @@ import { fontFamilies } from '../constants/fontFamilies'
 const HomeScreen = ({ navigation }: any) => {
   return (
     <View style={{ flex: 1 }}>
-      <Container>
+      <Container isScroll>
         <SectionComponent>
           <RowComponent justify='space-between'>
             <Element4 size={24} color={colors.descriptionColors} />
