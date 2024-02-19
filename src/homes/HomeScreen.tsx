@@ -34,8 +34,9 @@ const HomeScreen = ({ navigation }: any) => {
         </SectionComponent>
 
         <SectionComponent>
-          <RowComponent styles={[globalStyle.inputContainer]}
-            onPress={() => console.log('sadasd')}>
+          <RowComponent 
+          styles={[globalStyle.inputContainer]}
+            onPress={() => navigation.navigate('SearchScreen')}>
             <TextComponent color={colors.descriptionColors} text='Search Task' />
             <SearchNormal1 size={20} color={colors.descriptionColors} />
           </RowComponent>
@@ -133,8 +134,10 @@ const HomeScreen = ({ navigation }: any) => {
         </SectionComponent>
       </Container>
       <View style={{
-        position: 'absolute', bottom: 0,
-        right: 0, left: 0,
+        position: 'absolute',
+        bottom: 0,
+        right: 0,
+        left: 0,
         padding: 20,
         justifyContent: 'center',
         alignItems: 'center'
