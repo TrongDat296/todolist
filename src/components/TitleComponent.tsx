@@ -1,4 +1,3 @@
-import {View, Text} from 'react-native';
 import React from 'react';
 import TextComponent from './TextComponent';
 import {fontFamilies} from '../constants/fontFamilies';
