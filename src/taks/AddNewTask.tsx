@@ -7,6 +7,7 @@ import InputComponent from '../components/InputComponent';
 import DateTimePickerComponent from '../components/DateTimePickerComponent';
 import RowComponent from '../components/RowComponent';
 import SpaceComponent from '../components/SpaceComponent';
+import { colors } from '../constants/colors';
 
 const initValue: TaskModel = {
   title: '',
@@ -88,7 +89,7 @@ const AddNewTask = ({navigation}: any) => {
       </SectionComponent>
 
       <SectionComponent>
-        <Button
+        <Button color={colors.bgColor}
           title="Save"
           onPress={() => {
             handleAddNewTask();

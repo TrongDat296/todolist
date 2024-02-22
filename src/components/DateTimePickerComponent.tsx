@@ -38,7 +38,11 @@ const DateTimePickerComponent = (props: Props) => {
             flex={1}
             text={
               selected
-                ? type =='time'?`${selected.getHours()}:${selected.getMinutes()}`: `${selected.getDate()}/${selected.getMonth() + 1}/ ${selected.getFullYear()}`
+                ? type == 'time'
+                  ? `${selected.getHours()}:${selected.getMinutes()}`
+                  : `${selected.getDate()}/${
+                      selected.getMonth() + 1
+                    }/ ${selected.getFullYear()}`
                 : placeholder
                 ? placeholder
                 : ''
@@ -69,13 +73,14 @@ const DateTimePickerComponent = (props: Props) => {
             <TitleComponent text="Date Time Picker" color={colors.textColor} />
             <View>
               <DatePicker
-                mode={type ? type:'datetime'}
+                mode={type ? type : 'datetime'}
                 date={selected ?? new Date()}
                 onDateChange={val => setDate(val)}
                 locale="vi"
               />
             </View>
             <Button
+              color={colors.bgColor}
               title="Confirm"
               onPress={() => {
                 onSelect(date);
@@ -84,6 +89,7 @@ const DateTimePickerComponent = (props: Props) => {
             />
             <SpaceComponent />
             <Button
+              color={colors.bgColor}
               title="Close"
               onPress={() => setIsVisibleModalDateTime(false)}
             />
