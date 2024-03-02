@@ -50,7 +50,8 @@ const Container = (props: Props) => {
           )}
         </View>
       </RowComponent>
-      {isScroll ? (
+      {
+      isScroll ? (
         <ScrollView style={{flex: 1, flexGrow: 1}}>{children}</ScrollView>
       ) : (
         <View style={{flex: 1}}>{children}</View>

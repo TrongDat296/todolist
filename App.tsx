@@ -1,14 +1,7 @@
-import {
-  View,
-  Text,
-  StyleSheet,
-  Button,
-  StatusBar,
-  SafeAreaView,
-} from 'react-native';
-import React from 'react';
-import {colors} from './src/constants/colors';
 import {NavigationContainer} from '@react-navigation/native';
+import React from 'react';
+import {SafeAreaView, StatusBar, StyleSheet} from 'react-native';
+import {colors} from './src/constants/colors';
 import Router from './src/routers/Router';
 
 const App = () => {

@@ -1,16 +1,11 @@
+import React, { ReactNode } from 'react';
 import {
   StyleProp,
-  StyleSheet,
-  Text,
-  Touchable,
   TouchableOpacity,
   View,
-  ViewStyle,
+  ViewStyle
 } from 'react-native';
-import React, {ReactNode} from 'react';
-import {globalStyle} from '../styles/globalStyle';
-import AntDesign from 'react-native-vector-icons/AntDesign'
-import { colors } from '../constants/colors';
+import { globalStyle } from '../styles/globalStyle';
 interface Props {
   children: ReactNode;
   justify?:

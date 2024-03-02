@@ -22,7 +22,7 @@ const TextComponent = (props: Props) => {
             flex: flex ?? 1,
             fontFamily: font ?? fontFamilies.semiBold,
             fontSize: size ?? 14,
-            color: color ?? colors.descriptionColors,
+            color: color ?? colors.textColor,
         },
         styles,
         ]}>{text}</Text>
